@@ -1,0 +1,97 @@
+1. What is the result of the code, and explain?
+
+
+>>> X = 'iNeuron'
+>>> def func():
+print(X)
+
+
+>>> func()
+
+Result  = iNeuron, it will be a non type because print command is used instead of return. As variable 
+x was already defined, it simply followed the print statement.
+
+
+2. What is the result of the code, and explain?
+
+
+>>> X = 'iNeuron'
+>>> def func():
+X = 'NI!'
+
+
+>>> func()
+>>> print(X)
+
+Result = iNeuron, function func() will not print anything because no print or return command is given
+However, print command will just print the variable that was defined prior to function definition.
+
+
+3. What does this code print, and why?
+
+
+>>> X = 'iNeuron'
+>>> def func():
+X = 'NI'
+print(X)
+
+
+>>> func()
+>>> print(X)
+
+results = func() = NI and print(x) = iNeuron
+NI because func() replaced the value of x with NI and printed the variable.
+iNeuron because print function is used outside the function.
+
+4. What output does this code produce? Why?
+
+
+>>> X = 'iNeuron'
+>>> def func():
+global X
+X = 'NI'
+
+
+>>> func()
+>>> print(X)
+
+Result = NI because function defined the value of x as global
+
+5. What about this code—what’s the output, and why?
+
+
+>>> X = 'iNeuron'
+>>> def func():
+X = 'NI'
+def nested():
+print(X)
+nested()
+
+
+>>> func()
+>>> X
+
+results = func() output is NI because nested function changed the value from iNeuron to NI and
+printed nested at the end.
+x will give string only.
+
+
+6. How about this code: what is its output in Python 3, and explain?
+
+
+>>> def func():
+X = 'NI'
+def nested():
+nonlocal X
+X = 'Spam'
+nested()
+print(X)
+
+
+>>> func()
+
+Result = Spam because non local  command discard the value of local variable x to spam.
+
+
+
+
