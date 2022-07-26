@@ -1,0 +1,19 @@
+#we hold n number of varible in single class that too without even memorising them
+class student_9:
+    def __init__(self, name, age, height):
+        self.name = name
+        self.age = age
+        self.height = height
+    def info1(self):
+        return "Student name", self.name
+    def info2(self):
+        return "student age", self.age
+    def info3(self):
+        return "student height", self.height
+ 
+i1 = student_9("Pawan", 23, 1.45)
+i2 = student_9("panw", 24, 1.42)
+
+i1.info1()
+i1.info3()
+i1.info2()
